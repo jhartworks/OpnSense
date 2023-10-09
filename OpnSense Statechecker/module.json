@@ -1,0 +1,14 @@
+{
+    "id": "{B7D9B462-D7D6-F5E2-7029-3853997B303C}",
+    "name": "OpnSense Statechecker",
+    "type": 3,
+    "vendor": "OpnSense",
+    "aliases":
+    [
+    ],
+    "url": "https://jh-artworks.com",
+    "parentRequirements": [],
+    "childRequirements": [],
+    "implemented": [],
+    "prefix": "OSSC"
+}

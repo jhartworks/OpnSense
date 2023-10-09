@@ -1,0 +1,16 @@
+{
+    "elements":
+    [
+        { "type": "ValidationTextBox", "name": "Host", "caption": "IP-Adress or Host" },
+        { "type": "ValidationTextBox", "name": "ApiKey", "caption": "API KEY" },
+        { "type": "ValidationTextBox", "name": "ApiSecret", "caption": "API SECRET" }
+    ],
+    "actions":
+    [
+        { "type": "Button", "label": "Update", "onClick": "OSSC_CheckValues($id);" }
+    ],
+    "status":
+    [
+
+    ]
+}

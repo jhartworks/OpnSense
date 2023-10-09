@@ -1,0 +1,13 @@
+{
+    "id": "{11FF8869-870E-6E13-E35A-AB2DC64CC992}",
+    "author": "J.H. Artworks",
+    "name": "OpnSense",
+    "url": "https://jh-artworks.com",
+    "compatibility": {
+        "version": "6.0",
+        "date": 1491343200
+    },
+    "version": "1.0",
+    "build": 0,
+    "date": 0
+}
