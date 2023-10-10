@@ -3,7 +3,8 @@
     [
         { "type": "ValidationTextBox", "name": "Host", "caption": "IP-Adress or Host" },
         { "type": "ValidationTextBox", "name": "ApiKey", "caption": "API KEY" },
-        { "type": "ValidationTextBox", "name": "ApiSecret", "caption": "API SECRET" }
+        { "type": "ValidationTextBox", "name": "ApiSecret", "caption": "API SECRET" },
+        { "type": "NumberSpinner", "name": "Updateintervall", "caption": "Seconds" }
     ],
     "actions":
     [

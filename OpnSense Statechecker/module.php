@@ -9,7 +9,7 @@ class OpnSenseStatechecker extends IPSModule {
         $this->RegisterPropertyString("Host","");
         $this->RegisterPropertyString("ApiKey","");
         $this->RegisterPropertyString("ApiSecret","");
-        $this->RegisterTimer("Update", 10000, 'OSSC_CheckValues('.$this->InstanceID.');');
+        $this->RegisterTimer("Update", 0, 'OSSC_CheckValues('.$this->InstanceID.');');
         if (!IPS_VariableProfileExists("CpuLoad"))
         {
             IPS_CreateVariableProfile("CpuLoad", 2);
@@ -55,6 +55,7 @@ class OpnSenseStatechecker extends IPSModule {
         $this->RegisterVariableInteger("FwTimestamp", "Firewall Timestamp", "",430);
         $this->RegisterVariableString("FwStatus", "Firewall Status", "",440);
 
+        $this->RegisterPropertyInteger("Updateintervall",30);
 
     }
 
@@ -63,8 +64,7 @@ class OpnSenseStatechecker extends IPSModule {
         // Diese Zeile nicht löschen
         parent::ApplyChanges();
 
-        $this->CheckValues();
-
+        $this->SetTimerInterval("Update", $this->ReadPropertyInteger("Updateintervall") * 1000);
     }
 
     public function CheckValues() {
